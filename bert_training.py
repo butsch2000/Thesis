@@ -1,14 +1,3 @@
-"""
-download results:
-rsync -avz -e "ssh -i ~/.ssh/id_vast -p 19465" \
-  --exclude "pytorch_model.bin" \
-  --exclude "pytorch_model.*.bin" \
-  --exclude "optimizer.pt" \
-  --exclude "scheduler.pt" \
-  --exclude "*.safetensors" \
-  root@198.145.126.233:/workspace/training/balanced_bert_outputs/ ./balanced_bert_outputs_light/
-"""
-
 from __future__ import annotations
 
 import argparse

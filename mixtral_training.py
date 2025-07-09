@@ -1,14 +1,3 @@
-"""
-download results:
-rsync -avz -e "ssh -i ~/.ssh/id_vast -p 17219" \
-  --exclude "pytorch_model.bin" \
-  --exclude "pytorch_model.*.bin" \
-  --exclude "optimizer.pt" \
-  --exclude "scheduler.pt" \
-  --exclude "*.safetensors" \
-  root@45.135.56.12:/workspace/training/mixtral_outputs/ ./mixtral_outputs_light/
-"""
-
 from __future__ import annotations
 import argparse
 from pathlib import Path
